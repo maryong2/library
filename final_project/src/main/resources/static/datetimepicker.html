@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+	<div id="calender"></div>
+	
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="lib/datetimepicker-master/build/jquery.datetimepicker.full.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$.datetimepicker.setLocale('kr'); // Set the locale to Korean
+		$('#calender').datetimepicker({
+			lang: 'ko',
+			format: 'Y-m-d H:i:00', // Set the date and time format
+		});
+	});
+</script>
+</body>
+</html>
